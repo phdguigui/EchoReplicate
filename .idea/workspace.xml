@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05d21f86-8206-4f01-82e8-b873f821f61d" name="Changes" comment="" />
+    <list default="true" id="05d21f86-8206-4f01-82e8-b873f821f61d" name="Changes" comment="Criando entidade para o objeto remoto">
+      <change afterPath="$PROJECT_DIR$/.idea/EchoReplicate.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Comandos para executar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/entities/Echo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/server/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/server/Server.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/server/Server.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,6 +35,18 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "phdguigui"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/phdguigui/EchoReplicate.git",
+    "accountId": "6456430e-bd76-4b91-836f-ca79c25b7fa3"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -41,8 +63,10 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "deletionFromPopupRequiresConfirmation": "false",
-    "last_opened_file_path": "/home/usuario/Downloads/ReplicacaoRMI/lib",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/home/usuario/Downloads/EchoReplicate",
     "onboarding.tips.debug.path": "/home/usuario/Downloads/ReplicacaoRMI/src/Main.java",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
@@ -51,6 +75,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/lib" />
     </key>
   </component>
@@ -105,5 +130,9 @@
       <updated>1750303410692</updated>
     </task>
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Criando entidade para o objeto remoto" />
+    <option name="LAST_COMMIT_MESSAGE" value="Criando entidade para o objeto remoto" />
   </component>
 </project>
