@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="05d21f86-8206-4f01-82e8-b873f821f61d" name="Changes" comment="Criando entidade para o objeto remoto">
-      <change afterPath="$PROJECT_DIR$/.idea/EchoReplicate.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Comandos para executar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/entities/Echo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/client/EchoClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/client/EchoClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/client/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/entities/Echo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/entities/Echo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/server/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/server/Server.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/server/Server.java" afterDir="false" />
     </list>
@@ -35,18 +32,18 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "phdguigui"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;phdguigui&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/phdguigui/EchoReplicate.git",
-    "accountId": "6456430e-bd76-4b91-836f-ca79c25b7fa3"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/phdguigui/EchoReplicate.git&quot;,
+    &quot;accountId&quot;: &quot;6456430e-bd76-4b91-836f-ca79c25b7fa3&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -65,7 +62,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "deletionFromPopupRequiresConfirmation": "false",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "dev",
     "last_opened_file_path": "/home/usuario/Downloads/EchoReplicate",
     "onboarding.tips.debug.path": "/home/usuario/Downloads/ReplicacaoRMI/src/Main.java",
     "project.structure.last.edited": "Modules",

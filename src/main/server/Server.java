@@ -1,12 +1,12 @@
 package server;
 
-import common.EchoService;
 import org.eclipse.paho.client.mqttv3.*;
 import entities.Echo;
 
 import java.rmi.Naming;
 import java.rmi.NotBoundException;
 import java.util.*;
+import common.EchoService;
 
 public class Server implements MqttCallback {
 
@@ -99,7 +99,6 @@ public class Server implements MqttCallback {
         try {
             String[] nomes = Naming.list("rmi://localhost:1099");
 
-            // Verifica se já existe novo mestre
             try {
                 EchoService mestre = (EchoService) Naming.lookup("rmi://localhost:1099/echo");
                 if (mestre.isAlive()) {

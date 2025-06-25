@@ -1,12 +1,12 @@
 package entities;
 
-import common.EchoService;
 import org.eclipse.paho.client.mqttv3.*;
 
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 import java.util.ArrayList;
 import java.util.List;
+import common.EchoService;
 
 public class Echo extends UnicastRemoteObject implements EchoService {
 
@@ -23,7 +23,7 @@ public class Echo extends UnicastRemoteObject implements EchoService {
     @Override
     public String echo(String msg) throws RemoteException {
         messages.add(msg);
-        System.out.println((isMaster ? "[MESTRE]" : "[RÉPLICA]") + " Mensagem recebida: " + msg);
+        System.out.println("[MESTRE] Mensagem recebida: " + msg);
 
         if (isMaster && mqttClient != null) {
             try {
@@ -34,7 +34,7 @@ public class Echo extends UnicastRemoteObject implements EchoService {
             }
         }
 
-        return (isMaster ? "Eco (mestre): " : "Eco (réplica): ") + msg;
+        return "Eco: " + msg;
     }
 
     @Override
