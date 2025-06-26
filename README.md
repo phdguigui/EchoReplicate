@@ -50,19 +50,82 @@ A distributed replicated echo service with passive replication and fault toleran
 
 ## ▶️ How to Run
 
-1. **Start the MQTT Broker**  
-   (e.g., Mosquitto on Ubuntu 20.04 or your local environment.)
+To run the application, follow the steps below. All scripts mentioned are located inside the `scripts/` folder, so **you must execute the commands from inside this folder**.
 
-2. **Start Replica Servers**  
-   - Launch one or more server instances (the same code, different processes).
-   - Each server will register itself, subscribe to the MQTT topic, and sync replicated messages.
+## ✨ Execution Permissions
 
-3. **Start the Client**  
-   - Use the client interface to send `echo(msg)` or request `getListOfMsg()`.
+If you get a permission error when executing a script, make all of them executable with:
 
-4. **Simulate Failure and Election**  
-   - Stop the master server process.
-   - The system will automatically elect a new master, and clients will transparently redirect their requests.
+```bash
+chmod +x *.sh
+```
+
+---
+
+## ① `./build.sh`
+
+Compiles all `.java` files inside the `src/main/` folder, including using the MQTT JAR dependency. The compiled `.class` files are generated inside the `run/` folder.
+
+> Use this script whenever you modify any code.
+
+---
+
+## ② `./run_registry.sh`
+
+Starts the **RMI Registry**, which is required so remote objects can be found and accessed.
+
+- This process runs in the background.
+- To stop it, use the following command (or Ctrl C in the terminal that is running the process):
+
+```bash
+pkill rmiregistry
+```
+
+---
+
+## ③ `./run_server.sh`
+
+Starts a server instance:
+
+- If no master is registered, the server will become the **master**.
+- If a master already exists, the server will act as a **replica**.
+
+> You can execute this script in multiple terminals to simulate multiple replicas/servers.
+
+---
+
+## ④ `./run_client.sh`
+
+Starts a client that communicates with the current master server.
+
+The client allows you to:
+
+- Send messages (echo)
+- View message history
+- Test fault tolerance and master re-election
+
+> You can run it as many times as needed, even simultaneously.
+
+---
+
+## ⑤ `./clean.sh`
+
+Removes all `.class` files and clears the `run/` folder, resetting the project to its initial state.
+
+> Useful to ensure a clean build or prepare the environment before delivery/testing.
+
+---
+
+## ✅ Recommended Execution Order
+
+1. `./build.sh` – compile all sources
+2. `./run_registry.sh` – start the RMI Registry
+3. `./run_server.sh` – run in multiple terminals to start servers/replicas
+4. `./run_client.sh` – run to test interaction
+
+You can re-run `run_server.sh` to add more replicas at any time.
+
+Finish with `clean.sh` to reset the environment if wanted.
 
 ---
 
@@ -71,14 +134,6 @@ A distributed replicated echo service with passive replication and fault toleran
 - `src/` - Source code (servers, clients, utilities).
 - `docs/` - Documentation and UML diagrams.
 - `scripts/` - Helper scripts for running multiple servers/clients.
-
----
-
-## 🌱 Next Steps / Improvements
-
-- Distributed (rather than centralized) leader election.
-- History resynchronization for late-joining replicas.
-- Enhanced failure detection and monitoring.
 
 ---
 
