@@ -4,13 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05d21f86-8206-4f01-82e8-b873f821f61d" name="Changes" comment="Criando entidade para o objeto remoto">
+    <list default="true" id="05d21f86-8206-4f01-82e8-b873f821f61d" name="Changes" comment="Small refact">
+      <change afterPath="$PROJECT_DIR$/scripts/build.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/clean.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/run_client.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/run_registry.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/run_server.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/client/EchoClient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/client/EchoClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/client/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/entities/Echo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/entities/Echo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/server/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/server/Server.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/server/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/common/EchoService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/server/Server.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,10 +128,20 @@
       <option name="presentableId" value="Default" />
       <updated>1750303410692</updated>
     </task>
+    <task id="LOCAL-00001" summary="Small refact">
+      <option name="closed" value="true" />
+      <created>1750895196943</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1750895196943</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Criando entidade para o objeto remoto" />
-    <option name="LAST_COMMIT_MESSAGE" value="Criando entidade para o objeto remoto" />
+    <MESSAGE value="Small refact" />
+    <option name="LAST_COMMIT_MESSAGE" value="Small refact" />
   </component>
 </project>
