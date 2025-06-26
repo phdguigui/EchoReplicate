@@ -108,7 +108,7 @@ The client allows you to:
 
 ---
 
-## ⑤ `./clean.sh`
+## `./clean.sh`
 
 Removes all `.class` files and clears the `run/` folder, resetting the project to its initial state.
 
@@ -132,7 +132,7 @@ Finish with `clean.sh` to reset the environment if wanted.
 ## 📁 Repository Structure
 
 - `src/` - Source code (servers, clients, utilities).
-- `docs/` - Documentation and UML diagrams.
+- `lib/` - Library (.jar files).
 - `scripts/` - Helper scripts for running multiple servers/clients.
 
 ---
