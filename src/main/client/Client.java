@@ -1,13 +1,12 @@
 package client;
 
-import common.EchoService;
-
 import java.rmi.Naming;
 import java.rmi.RemoteException;
 import java.util.List;
 import java.util.Scanner;
+import common.EchoService;
 
-public class EchoClient {
+public class Client {
 
     private static EchoService echoService;
 
@@ -29,7 +28,7 @@ public class EchoClient {
                 case 1:
                     System.out.print("Mensagem: ");
                     String msg = scanner.nextLine();
-                    String resposta = enviarMensagem(msg);
+                    String resposta = echo(msg);
                     System.out.println("Resposta: " + resposta);
                     break;
                 case 2:
@@ -47,12 +46,11 @@ public class EchoClient {
         }
     }
 
-    private static String enviarMensagem(String msg) {
+    private static String echo(String msg) {
         while (true) {
             try {
                 return echoService.echo(msg);
             } catch (RemoteException e) {
-                //System.out.println("Tentando reconectar ao novo mestre...");
                 reconectar();
             }
         }
@@ -63,7 +61,6 @@ public class EchoClient {
             try {
                 return echoService.getListOfMsg();
             } catch (RemoteException e) {
-                //System.out.println("Tentando reconectar ao novo mestre...");
                 reconectar();
             }
         }
@@ -83,9 +80,7 @@ public class EchoClient {
     private static void tentarConectar() {
         try {
             echoService = (EchoService) Naming.lookup("rmi://localhost:1099/echo");
-            //System.out.println("Conectado ao novo mestre.");
         } catch (Exception e) {
-            //System.out.print(".");
         }
     }
 }

@@ -1,0 +1,29 @@
+==============================================================================================
+Compilar EchoService
+
+usuario@usuario-VirtualBox:~/Downloads/ReplicacaoRMI/src/main$ javac common/EchoService.java
+==============================================================================================
+Compilar EchoClient
+
+usuario@usuario-VirtualBox:~/Downloads/ReplicacaoRMI/src/main$ javac client/EchoClient.java
+==============================================================================================
+Compilar Server
+
+usuario@usuario-VirtualBox:~/Downloads/ReplicacaoRMI/src/main$ javac -cp ".:../../lib/org.eclipse.paho.client.mqttv3-1.2.5.jar:../" server/Server.java
+==============================================================================================
+Subir RMIRegistry
+
+usuario@usuario-VirtualBox:~/Downloads/ReplicacaoRMI/src/main$ rmiregistry -J-Djava.class.path=".:../../lib/org.eclipse.paho.client.mqttv3-1.2.5.jar"
+==============================================================================================
+Rodar Server
+
+usuario@usuario-VirtualBox:~/Downloads/ReplicacaoRMI/src/main$ java -cp ".:../../lib/org.eclipse.paho.client.mqttv3-1.2.5.jar" server.Server
+==============================================================================================
+Rodar Client
+
+usuario@usuario-VirtualBox:~/Downloads/ReplicacaoRMI/src/main$ java client/EchoClient
+==============================================================================================
+Compilar Echo
+
+usuario@usuario-VirtualBox:~/Downloads/EchoReplicate/src/main$ javac -cp ".:../../lib/org.eclipse.paho.client.mqttv3-1.2.5.jar:../" entities/Echo.java
+==============================================================================================
